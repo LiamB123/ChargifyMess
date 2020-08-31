@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chargify</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
+    <link href = "index.html">
+    <link href = "script.js">
+    <script src="https://js.chargify.com/chargify.js"></script>  <!-- This links to the Chargify hosted iframes for Chargify.js -->
+    
+
+    <style>
+      body {
+        font-family: 'Lato', sans-serif;
+        background-color: #F2F4F8;
+        overflow: scroll;
+        min-height: 800px;
+        height: 100vh;
+      }
+
+      h1 {
+        margin-top: 0;
+      }
+
+      button {
+        padding: 10px;
+        color: #FFF;
+        border-radius: 6px;
+        background: #47C486;
+        font-size: 14px;
+        font-weight: 500;
+        border: none;
+        margin-top: 5px;
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+
+      .chargify-js-wrapper {
+        margin: 0 auto;
+        display: flex;
+        flex-flow: column;
+        width: fit-content;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .chargify-js-content {
+        padding: 20px;
+        border-radius: 10px;
+        background: #FFF;
+        width: 50%;
+        box-shadow: 0 5px 10px 0 rgba(0,0,0,0.175);
+        margin: 0 auto;
+        min-width: 300px;
+        border-top: 5px solid #439aea;
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+      }
+
+      #chargify1 {
+        display: flex;
+      }
+
+      #chargify1 iframe {
+        width: 100% !important;
+      }
+
+      #chargify2 {
+        display: flex;
+      }
+
+      #chargify2 iframe {
+        width: 100% !important;
+      }
+
+      #chargify3 iframe {
+        width: 100% !important;
+      }
+
+      #chargify4 iframe {
+        width: 100% !important;
+      }
+
+      #chargify5 iframe {
+        width: 100% !important;
+      }
+
+      #chargify6 iframe {
+        width: 100% !important;
+      }
+
+      #chargify7 iframe {
+        width: 100% !important;
+      }
+
+      #chargify8 iframe {
+        width: 100% !important;
+      }
+
+      #chargify9 iframe {
+        width: 100% !important;
+      }
+
+      #chargify10 iframe {
+        width: 100% !important;
+      }
+
+      #chargify11 iframe {
+        width: 100% !important;
+      }
+
+      #chargify12 iframe {
+        width: 100% !important;
+      }
+
+      .cardfront {
+        display: flex;
+        flex-flow: column;
+      }
+
+      .cardback {
+        display: flex;
+        flex-flow: row;
+      }
+
+      .cardback div {
+        margin-right: 15px;
+      }
+
+      .cardback div:last-child {
+        margin-right: 0;
+      }
+
+      .name {
+        display: flex;
+        flex-flow: row;
+      }
+
+      .name div {
+        margin-right: 15px;
+        width: 100%;
+      }
+
+      .name div:last-child {
+        margin-right: 0;
+        width: 100%;
+      }
+
+      .address3 {
+        display: flex;
+        flex-flow: row;
+      }
+
+      .address3 div {
+        margin-right: 15px;
+        width: 100%;
+      }
+
+      .address3 div:last-child {
+        margin-right: 0;
+        width: 100%;
+      }
+      .address4 {
+        display: flex;
+        flex-flow: row;
+      }
+
+      .address4 div {
+        margin-right: 15px;
+        width: 100%;
+      }
+
+      .address4 div:last-child {
+        margin-right: 0;
+        width: 100%;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <div class="chargify-js-wrapper">
+      <div class="chargify-js-content">
+        <h1>Chargify</h1>
+
+        <form class="host-form" id='host-form'>
+          <div class="cardfront">
+            <div id="chargify1"></div>
+          </div>
+
+          <div class="cardback">
+            <div id="chargify2" type="textarea"> </div>
+            <div id="chargify3"></div>
+            <div id="chargify4"></div>
+          </div>
+
+          <div class="name">
+            <div id="chargify5"></div>
+            <div id="chargify6"></div>
+          </div>
+
+          <div class="address1">
+            <div id="chargify7"></div>
+          </div>
+
+          <div class="address2">
+            <div id="chargify8"></div>
+          </div>
+
+          <div class="address3">
+            <div id="chargify9"></div>
+            <div id="chargify10"></div>
+          </div>
+
+          <div class="address4">
+            <div id="chargify11"></div>
+            <div id="chargify12"></div>
+          </div>
+
+          <button type="submit" class="host-button">Submit Host Form</button>
+        </form>
+      </div>
+    </div>
+
+
+      <button ><a href = "index.html"> Send me to Index </a></button>
+
+    <script src="./assets/load.js"></script>   <!-- This contains your Chargify.js file -->
+    <script src="./assets/submit.js"></script>  <!-- This pauses form submission to create a token -->
+  </body>
+</html>
